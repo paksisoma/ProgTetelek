@@ -1,0 +1,33 @@
+using System;
+class Hello
+{
+      static void Main() {
+ 
+          int[] tomb =  {8, 9, 5, 4, 1};
+          int n = 5;
+ 
+          Console.WriteLine("Összegzés tétel");
+          int osszeg = 0;
+          for (int i = 0; i < n; i++)
+              osszeg = osszeg + tomb[i];
+          Console.WriteLine("Összeg: " + osszeg);
+ 
+      }
+}
+
+using System;
+class Program
+{
+	static void Main()
+	{
+		int[] t = {9, 7, 3, 5, 4, 2, 6};
+		int n = t.Length;
+		int c = 0;
+ 
+		for(int i=0; i<n; i++)
+			if(t[i] < 5)
+				c++;
+ 
+		Console.WriteLine("5-nél kisebb számok darabszáma: {0}", c);
+	}
+}
